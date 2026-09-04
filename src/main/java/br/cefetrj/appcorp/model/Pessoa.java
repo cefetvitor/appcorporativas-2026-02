@@ -9,7 +9,5 @@ public class Pessoa extends GenericEntity{
 
     private String nome;
 
-    private Long cpf;
-
     private LocalDate dataNascimento;
 }
