@@ -12,7 +12,7 @@ public class DatabaseConfig {
         HikariConfig config = new HikariConfig();
 
         config.setJdbcUrl(
-            "jdbc:mysql://localhost:3306/meubanco" +
+            "jdbc:mysql://localhost:3306/aula" +
             "?useSSL=false" +
             "&serverTimezone=UTC"
         );
