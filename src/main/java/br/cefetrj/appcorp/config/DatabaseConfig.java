@@ -18,7 +18,7 @@ public class DatabaseConfig {
         );
 
         config.setUsername("root");
-        config.setPassword("senha");
+        config.setPassword("root");
 
         config.setMaximumPoolSize(10);
         config.setMinimumIdle(2);
