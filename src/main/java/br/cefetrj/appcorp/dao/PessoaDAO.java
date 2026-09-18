@@ -17,7 +17,7 @@ public class PessoaDAO extends GenericDAO<Pessoa>{
 
 	@Override
 	protected String getInsertSql() {
-		return "INSERT INTO pessoa (nome, cpf, quemCadastrou, quemAlterouAUltimavez, dataCadastro, dataUltimaAlteracao) VALUES (?, ?, ?, ?, ?, ?)";
+		return "INSERT INTO pessoa (nome, dataNascimento, quemCadastrou, quemAlterouAUltimavez, dataCadastro, dataUltimaAlteracao) VALUES (?, ?, ?, ?, ?, ?)";
 	}
 
 	@Override
@@ -30,6 +30,26 @@ public class PessoaDAO extends GenericDAO<Pessoa>{
         statement.setDate(5, Date.valueOf(pessoa.getDataCadastro()));   
         statement.setDate(6, Date.valueOf(pessoa.getDataUltimaAlteracao()));
 		
+	}
+
+	@Override
+	protected String getUpdateSql() {
+		return "UPDATE pessoa SET nome=?, dataNascimento=?, quemAlterouAUltimavez=?, dataUltimaAlteracao=? WHERE id=?";
+	}
+
+	@Override
+	protected void setUpdateParameters(PreparedStatement statement, Pessoa pessoa)
+			throws SQLException {
+		statement.setString(1, pessoa.getNome());
+		statement.setDate(2, Date.valueOf(pessoa.getDataNascimento()));
+		statement.setLong(3, pessoa.getQuemAlterouAUltimavez().getId());
+		statement.setDate(4, Date.valueOf(pessoa.getDataUltimaAlteracao()));
+		statement.setLong(5, pessoa.getId());
+	}
+
+	@Override
+	protected String getTableName() {
+		return "pessoa";
 	}
 
 }

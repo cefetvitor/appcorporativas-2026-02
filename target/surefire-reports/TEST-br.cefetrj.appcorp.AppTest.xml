@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.cefetrj.appcorp.AppTest" time="0.023" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="br.cefetrj.appcorp.AppTest" time="0.019" tests="1" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="25"/>
+    <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3\target\test-classes;C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3\target\classes;C:\Users\Aluno\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\Aluno\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\Aluno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Aluno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Aluno\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.class.path" value="C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02\target\test-classes;C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02\target\classes;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\vitor\.m2\repository\org\projectlombok\lombok\1.18.46\lombok-1.18.46.jar;C:\Users\vitor\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vitor\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;C:\Users\vitor\.m2\repository\com\mysql\mysql-connector-j\9.4.0\mysql-connector-j-9.4.0.jar;C:\Users\vitor\.m2\repository\com\google\protobuf\protobuf-java\4.31.1\protobuf-java-4.31.1.jar;C:\Users\vitor\.m2\repository\com\zaxxer\HikariCP\7.0.2\HikariCP-7.0.2.jar;C:\Users\vitor\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="America/Sao_Paulo"/>
     <property name="os.name" value="Windows 11"/>
-    <property name="java.vm.specification.version" value="25"/>
+    <property name="java.vm.specification.version" value="22"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
-    <property name="sun.boot.library.path" value="C:\dev\jdk\bin"/>
-    <property name="sun.java.command" value="C:\Users\Aluno\AppData\Local\Temp\surefire10221757163645428075\surefirebooter1264517395256512032.jar C:\Users\Aluno\AppData\Local\Temp\surefire10221757163645428075 2026-09-04T18-38-35_428-jvmRun1 surefire2898501583533805050tmp surefire_013655169005372526004tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-22.0.2.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\vitor\AppData\Local\Temp\surefire9815645450087091771\surefirebooter3200464158616387332.jar C:\Users\vitor\AppData\Local\Temp\surefire9815645450087091771 2026-09-18T18-39-12_547-jvmRun1 surefire4318194159313427754tmp surefire_014392424316247546843tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3\target\test-classes;C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3\target\classes;C:\Users\Aluno\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\Aluno\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\Aluno\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Aluno\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Aluno\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02\target\test-classes;C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02\target\classes;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-core\2.26.1\log4j-core-2.26.1.jar;C:\Users\vitor\.m2\repository\org\apache\logging\log4j\log4j-api\2.26.1\log4j-api-2.26.1.jar;C:\Users\vitor\.m2\repository\org\projectlombok\lombok\1.18.46\lombok-1.18.46.jar;C:\Users\vitor\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\vitor\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\vitor\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;C:\Users\vitor\.m2\repository\com\mysql\mysql-connector-j\9.4.0\mysql-connector-j-9.4.0.jar;C:\Users\vitor\.m2\repository\com\google\protobuf\protobuf-java\4.31.1\protobuf-java-4.31.1.jar;C:\Users\vitor\.m2\repository\com\zaxxer\HikariCP\7.0.2\HikariCP-7.0.2.jar;C:\Users\vitor\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\Aluno"/>
+    <property name="user.home" value="C:\Users\vitor"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2026-01-20"/>
-    <property name="java.home" value="C:\dev\jdk"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-22.0.2.9-hotspot"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3"/>
+    <property name="basedir" value="C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Aluno\AppData\Local\Temp\surefire10221757163645428075\surefirebooter1264517395256512032.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vitor\AppData\Local\Temp\surefire9815645450087091771\surefirebooter3200464158616387332.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="25.0.2+10-LTS-69"/>
-    <property name="user.name" value="Aluno"/>
+    <property name="java.runtime.version" value="22.0.2+9"/>
+    <property name="user.name" value="vitor"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\Aluno\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\Aluno\AppData\Local\Temp\"/>
-    <property name="java.version" value="25.0.2"/>
-    <property name="user.dir" value="C:\Users\Aluno\Documents\Vitor\AppCorporativa\2026\Projeto\aula3"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-22.0.2+9"/>
+    <property name="localRepository" value="C:\Users\vitor\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\vitor\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="C:\CEFET\App Coorporativas\2026-1\appcorporativas-2026-02"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\dev\jdk\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\PowerShell\7;Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\dev\git\cmd;C:\dev\composer;C:\dev\mariadb\bin;C:\dev\putty\;C:\Program Files\Docker\Docker\resources\bin;C:\dev\node\;C:\ProgramData\UNIVALI\Portugol Studio;C:\Program Files\Java\latest\jdk-25\bin;C:\Program Files\PowerShell\7\;C:\Users\Aluno\AppData\Roaming\jacamo;C:\Users\Aluno\AppData\Local\Microsoft\WindowsApps;C:\Users\Aluno\AppData\Local\Programs\Microsoft VS Code\bin;C:\dev\apache-maven-3.9.16\bin;C:\dev\jdk\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-22.0.2.9-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Eclipse Adoptium\jdk-22.0.2.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\apache-maven-3.9.12\\bin;C:\dev\android\platform-tools;C:\Users\vitor\AppData\Local\Microsoft\WindowsApps;;C:\Users\vitor\AppData\Local\Programs\DockerDesktop\resources\bin;C:\Users\vitor\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\vitor\AppData\Roaming\npm;C:\Users\vitor\AppData\Local\Python\bin;C:\Users\vitor\AppData\Local\Python\pythoncore-3.14-64\Scripts;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="25.0.2+10-LTS-69"/>
-    <property name="stdin.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="22.0.2+9"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="69.0"/>
+    <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="br.cefetrj.appcorp.AppTest" time="0.001"/>
+  <testcase name="shouldAnswerWithTrue" classname="br.cefetrj.appcorp.AppTest" time="0"/>
 </testsuite>

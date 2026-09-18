@@ -1,2 +1,11 @@
+br\cefetrj\appcorp\controller\PessoaServlet.class
+br\cefetrj\appcorp\model\Pessoa.class
+br\cefetrj\appcorp\dao\GenericDAO.class
+br\cefetrj\appcorp\config\DatabaseConfig.class
 br\cefetrj\appcorp\App.class
-br\cefetrj\appcorp\servlet\WelcomeServlet.class
+br\cefetrj\appcorp\dao\PessoaDAO.class
+br\cefetrj\appcorp\config\ApplicationListener.class
+br\cefetrj\appcorp\service\PessoaService.class
+br\cefetrj\appcorp\service\GenericService.class
+br\cefetrj\appcorp\model\GenericEntity.class
+br\cefetrj\appcorp\controller\WelcomeServlet.class
