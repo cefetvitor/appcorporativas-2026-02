@@ -5,6 +5,7 @@ import java.sql.Date;
 import br.cefetrj.appcorp.model.Pessoa;
 
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.sql.DataSource;
@@ -50,6 +51,28 @@ public class PessoaDAO extends GenericDAO<Pessoa>{
 	@Override
 	protected String getTableName() {
 		return "pessoa";
+	}
+
+	@Override
+	protected Pessoa mapResultSetToEntity(ResultSet resultSet) throws SQLException {
+		Pessoa pessoa = new Pessoa();
+		pessoa.setId(resultSet.getLong("id"));
+		pessoa.setNome(resultSet.getString("nome"));
+		pessoa.setDataNascimento(resultSet.getDate("dataNascimento").toLocalDate());
+		pessoa.setDataCadastro(resultSet.getDate("dataCadastro").toLocalDate());
+		pessoa.setDataUltimaAlteracao(resultSet.getDate("dataUltimaAlteracao").toLocalDate());
+
+		long quemCadastrouId = resultSet.getLong("quemCadastrou");
+		if (!resultSet.wasNull()) {
+			pessoa.setQuemCadastrou(this.getById(quemCadastrouId));
+		}
+
+		long quemAlterouAUltimavezId = resultSet.getLong("quemAlterouAUltimavez");
+		if (!resultSet.wasNull()) {
+			pessoa.setQuemAlterouAUltimavez(this.getById(quemAlterouAUltimavezId));
+		}
+
+		return pessoa;
 	}
 
 }

@@ -2,7 +2,9 @@ package br.cefetrj.appcorp.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.sql.DataSource;
@@ -39,10 +41,57 @@ public abstract class GenericDAO<T extends GenericEntity> {
             );
         }
     }
+    protected abstract T mapResultSetToEntity(ResultSet resultSet) throws SQLException;
+
     public List<T> getAll() {
-        return null;
-    } 
+        String sql = "SELECT * FROM " + this.getTableName();
+        List<T> entities = new ArrayList<>();
+
+        try (
+            Connection connection = dataSource.getConnection();
+            PreparedStatement statement =
+                connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery()
+        ) {
+
+            while (resultSet.next()) {
+                entities.add(mapResultSetToEntity(resultSet));
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(
+                "Erro ao buscar entidades",
+                e
+            );
+        }
+
+        return entities;
+    }
+
     public T getById(Long id) {
+        String sql = "SELECT * FROM " + this.getTableName() + " WHERE id=?";
+
+        try (
+            Connection connection = dataSource.getConnection();
+            PreparedStatement statement =
+                connection.prepareStatement(sql)
+        ) {
+
+            statement.setLong(1, id);
+
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return mapResultSetToEntity(resultSet);
+                }
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(
+                "Erro ao buscar entidade",
+                e
+            );
+        }
+
         return null;
     }
     protected abstract String getUpdateSql();
