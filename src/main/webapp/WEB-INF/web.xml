@@ -1,0 +1,45 @@
+ · XML
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+ 
+    <display-name>Projeto Servlet</display-name>
+ 
+    <!-- Páginas iniciais (procuradas na ordem) -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+ 
+    <!-- Exemplo de servlet declarado no web.xml.
+         Não é necessário se a classe usar @WebServlet("/ola"). -->
+    <!--
+    <servlet>
+        <servlet-name>OlaServlet</servlet-name>
+        <servlet-class>br.cefet.servlets.OlaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OlaServlet</servlet-name>
+        <url-pattern>/ola</url-pattern>
+    </servlet-mapping>
+    -->
+ 
+    <!-- Tempo de expiração da sessão, em minutos -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+ 
+    <!-- Páginas de erro -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/erro404.html</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/erro500.html</location>
+    </error-page>
+ 
+</web-app>
