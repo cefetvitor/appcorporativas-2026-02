@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    Cadastrado com sucesso!
 </body>
 </html>
