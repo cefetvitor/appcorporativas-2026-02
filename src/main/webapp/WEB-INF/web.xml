@@ -1,4 +1,3 @@
- · XML
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -13,19 +12,6 @@
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
- 
-    <!-- Exemplo de servlet declarado no web.xml.
-         Não é necessário se a classe usar @WebServlet("/ola"). -->
-    <!--
-    <servlet>
-        <servlet-name>OlaServlet</servlet-name>
-        <servlet-class>br.cefet.servlets.OlaServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>OlaServlet</servlet-name>
-        <url-pattern>/ola</url-pattern>
-    </servlet-mapping>
-    -->
  
     <!-- Tempo de expiração da sessão, em minutos -->
     <session-config>
