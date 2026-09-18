@@ -29,7 +29,6 @@ public class PessoaServlet extends HttpServlet{
         );
         PessoaService pessoaService = new PessoaService(dataSource);
         pessoaService.create(pessoa);
-        super.doPost(req, resp);
         resp.sendRedirect(req.getContextPath() + "/pessoas/list.jsp");
     }
 

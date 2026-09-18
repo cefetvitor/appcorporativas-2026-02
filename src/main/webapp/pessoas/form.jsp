@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/pessoas" method="post">
+    <form action="/aula3/pessoas" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         <br>

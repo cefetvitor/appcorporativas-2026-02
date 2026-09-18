@@ -11,5 +11,18 @@ services:
     volumes:
       - aula3-mysql-data:/var/lib/mysql
 
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    environment:
+      PMA_HOST: aula3-mysql
+      PMA_PORT: 3306
+    ports:
+      - "81:80"
+
+
 volumes:
   aula3-mysql-data:
