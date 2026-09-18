@@ -11,9 +11,12 @@ public class DatabaseConfig {
     public DatabaseConfig() {
         HikariConfig config = new HikariConfig();
 
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+
         config.setJdbcUrl(
             "jdbc:mysql://localhost:3306/aula" +
             "?useSSL=false" +
+            "&allowPublicKeyRetrieval=true" +
             "&serverTimezone=UTC"
         );
 

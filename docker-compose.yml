@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: aula3-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: aula
+    ports:
+      - "3306:3306"
+    volumes:
+      - aula3-mysql-data:/var/lib/mysql
+
+volumes:
+  aula3-mysql-data:
