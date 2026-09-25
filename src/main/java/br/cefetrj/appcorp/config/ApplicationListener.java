@@ -23,7 +23,8 @@ public class ApplicationListener implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent event) {
-
-        databaseConfig.close();
+        if(databaseConfig != null) {
+            databaseConfig.close();
+        }
     }
 }
