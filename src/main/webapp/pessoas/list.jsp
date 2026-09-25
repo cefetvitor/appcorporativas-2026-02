@@ -29,6 +29,7 @@
                     <th>Data de Nascimento</th>
                     <th>Data de Cadastro</th>
                     <th>Última Alteração</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +40,7 @@
                     <td><%= pessoa.getDataNascimento() %></td>
                     <td><%= pessoa.getDataCadastro() %></td>
                     <td><%= pessoa.getDataUltimaAlteracao() %></td>
+                    <td><a href="<%= request.getContextPath() %>/pessoa/edicao?id=<%= pessoa.getId() %>">Editar</a></td>
                 </tr>
             <% } %>
             </tbody>

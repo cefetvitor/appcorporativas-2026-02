@@ -34,12 +34,23 @@ public class PessoaServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) 
         throws ServletException, IOException {
-        Pessoa pessoa = new Pessoa();
+        PessoaService pessoaService = getPessoaService();
+        String id = req.getParameter("id");
+        boolean edicao = id != null && !id.isEmpty();
+
+        Pessoa pessoa = edicao
+            ? pessoaService.getById(Long.valueOf(id))
+            : new Pessoa();
         pessoa.setNome(req.getParameter("nome"));
         pessoa.setDataNascimento(
             java.time.LocalDate.parse(req.getParameter("dataNascimento"))
         );
-        getPessoaService().create(pessoa);
+
+        if (edicao) {
+            pessoaService.update(pessoa);
+        } else {
+            pessoaService.create(pessoa);
+        }
         resp.sendRedirect(req.getContextPath() + "/pessoas");
     }
 
