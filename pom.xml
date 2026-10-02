@@ -10,7 +10,7 @@
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
 
-  <name>aula1</name>
+  <name>aula3</name>
   <url>http://www.example.com</url>
 
   <properties>
@@ -26,6 +26,13 @@
       <version>2.26.1</version>
       <scope>compile</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>7.1.2.Final</version>
+    </dependency>
+
 
     <!-- Encaminha os logs SLF4J (usados pelo HikariCP) para o Log4j2 -->
     <dependency>
